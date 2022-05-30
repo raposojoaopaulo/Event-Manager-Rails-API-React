@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import styles from './Event.module.css';
 
 const Event = ({ events, onDelete }) => {
@@ -10,18 +10,19 @@ const Event = ({ events, onDelete }) => {
   return (
     <>
       <div className="eventContainer">
-        <h2>
-          {event.event_date}
-          {' - '}
-          {event.event_type}
-          <button
-            className="delete"
-            type="button"
-            onClick={() => onDelete(event.id)}
-          >
-            Delete
-          </button>
-        </h2>
+      <h2>
+        {event.event_date}
+        {' - '}
+        {event.event_type}
+        <Link to={`/events/${event.id}/edit`}>Edit</Link>
+        <button
+          className="delete"
+          type="button"
+          onClick={() => onDelete(event.id)}
+        >
+          Delete
+        </button>
+      </h2>
         <ul>
           <li>
             <strong>Type:</strong> {event.event_type}
