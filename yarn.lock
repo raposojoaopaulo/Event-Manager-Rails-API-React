@@ -32,6 +32,11 @@
   "resolved" "https://registry.npmjs.org/@rails/actioncable/-/actioncable-7.0.3.tgz"
   "version" "7.0.3"
 
+"clsx@^1.1.1":
+  "integrity" "sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA=="
+  "resolved" "https://registry.npmjs.org/clsx/-/clsx-1.1.1.tgz"
+  "version" "1.1.1"
+
 "esbuild-linux-64@0.14.39":
   "integrity" "sha512-4tcgFDYWdI+UbNMGlua9u1Zhu0N5R6u9tl5WOM8aVnNX143JZoBZLpCuUr5lCKhnD0SCO+5gUyMfupGrHtfggQ=="
   "resolved" "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.14.39.tgz"
@@ -101,7 +106,7 @@
     "object-assign" "^4.1.1"
     "react-is" "^16.13.1"
 
-"react-dom@^18.1.0", "react-dom@>=16.8":
+"react-dom@^18.1.0", "react-dom@>=16", "react-dom@>=16.8":
   "integrity" "sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.1.0.tgz"
   "version" "18.1.0"
@@ -129,7 +134,14 @@
   dependencies:
     "history" "^5.2.0"
 
-"react@^18.1.0", "react@>=16.8":
+"react-toastify@^9.0.2":
+  "integrity" "sha512-IknOvdh7LNzeLKmZTn7EXYC4kaSM0VdUvRuNdBJs/F/NMgRW9kFXbzAUb8rpQxIH+p1YJ3KVbfmL5ThCPH6o0A=="
+  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-9.0.2.tgz"
+  "version" "9.0.2"
+  dependencies:
+    "clsx" "^1.1.1"
+
+"react@^18.1.0", "react@>=16", "react@>=16.8":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"
