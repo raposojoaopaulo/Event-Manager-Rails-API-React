@@ -14,7 +14,9 @@ const Event = ({ events, onDelete }) => {
         {event.event_date}
         {' - '}
         {event.event_type}
-        <Link to={`/events/${event.id}/edit`}>Edit</Link>
+        <Link to={`/events/${event.id}/edit`}>
+          <button className="edit">Edit</button>
+        </Link>
         <button
           className="delete"
           type="button"

@@ -140,16 +140,31 @@ button[type="submit"] {
 }
 
 button.delete {
-  margin-left: 1.5em;
+  margin-left: 1em;
   padding: 6px 15px;
   margin-bottom: 1.5em;
   border-radius: 0;
   background-color: white;
-  border: 1px solid #f57011;  
+  border: 1px solid #f57011; 
+  transition: .5s; 
 }
 
 button.delete:hover {
   background-color: #f57011;
+  color: white;
+}
+button.edit {
+  margin-left: 1em;
+  padding: 6px 15px;
+  margin-bottom: 1.5em;
+  border-radius: 0;
+  background-color: white;
+  border: 1px solid #236fff;  
+  transition: .5s;
+}
+
+button.edit:hover {
+  background-color: #236fff;
   color: white;
 }
 
