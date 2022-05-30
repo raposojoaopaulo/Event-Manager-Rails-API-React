@@ -140,19 +140,17 @@ button[type="submit"] {
 }
 
 button.delete {
-  background: none !important;
-  border: none;
-  padding: 0 !important;
-  margin-left: 10px;
-  cursor: pointer;
-  color: #236fff;
-  font-size: 15px;
-  font-weight: normal;
-  text-decoration: none;
+  margin-left: 1.5em;
+  padding: 6px 15px;
+  margin-bottom: 1.5em;
+  border-radius: 0;
+  background-color: white;
+  border: 1px solid #f57011;  
 }
 
 button.delete:hover {
-  text-decoration: underline;
+  background-color: #f57011;
+  color: white;
 }
 
 h2 a {
